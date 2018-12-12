@@ -26,7 +26,8 @@ public class CreditTransferUsingCSVStepDefs {
     @When("^John initiates a credit transfer with details (.*)$")
     public void user_initiates_a_credit_transfer_with_details(String dataMarker) {
 
-        Map<String, String> dataMap = TestFacade.getInstance().getTestDataProvider().getTestData(dataMarker);
+        Map<String, String> dataMap = TestFacade.getInstance()
+                .getTestDataProvider().getTestData(dataMarker);
 
         // to the interaction...
 
